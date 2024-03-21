@@ -63,7 +63,7 @@ def main() -> None:
     y = titanic_data[target]
 
     # Split the data into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=RANDOM_STATE)
 
     # Train a Random Forest classifier
     print("Training a Random Forest classifier...")
